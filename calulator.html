@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            if (confirm("Do you want to do calculation?")) {
+   
+    var X = parseFloat(prompt("Enter number X:"));
+    var Y = parseInt(prompt("Enter number Y (from 0 to 4):"));
+
+   
+    if (Y >= 0 && Y <= 4) {
+        switch (Y) {
+            case 0:
+                console.log("1");
+                break;
+            case 1:
+                console.log(X);
+                break;
+            case 2:
+                console.log(Math.pow(X, Y));
+                break;
+            case 3:
+                console.log(Math.pow(X, Y));
+                break;
+            case 4:
+                console.log(Math.pow(X, Y));
+                break;
+            default:
+                console.log("ERROR");
+        }
+    } else {
+        console.log("Number Y is not in the range");
+    }
+} else {
+    console.log("The program is closed");
+}
+            </script>
+    </body>
+</html>
